@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  display:flex;
+  flex-direction:row;
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.about-section {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .about-section h1 {
+    color: #333333;
+    margin-bottom: 20px;
+  }
+
+  .about-section h3 {
+    color: #ee6f57;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .about-section h4 {
+    color: #ee6f57;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .about-section p {
+    margin: 0;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>
+    <h3>
+        Welcome to GRUBHUB - Your Ultimate Food Delivery Destination!
+    </h3>
+    <br>
+    <h3>
+        At GRUBHUB, we believe that good food has the power to bring people together, create memories, and satisfy the soul. Our journey began with a simple yet powerful idea: to connect food enthusiasts with a diverse array of culinary delights from the comfort of their own homes. We are more than just a food delivery website; we are your partners in exploring a world of flavors and experiencing gastronomic adventures without leaving your doorstep.
+
+        <br> <br>
+        <p style="color:black">What Sets Us Apart</p>
+        <h4>
+        <ol>
+            <li>
+                <b>Diverse Culinary Exploration:</b> Whether you're craving classic comfort food, exotic international dishes, or health-conscious options, we've got you covered. Our extensive network of partner restaurants ensures that you'll find something to suit every mood and preference.
+
+
+            </li>
+
+            <li>
+                <b>Curated Excellence:</b> We're not just about quantity; we're about quality. Our team meticulously handpicks restaurants based on their commitment to using fresh ingredients, impeccable preparation, and outstanding service.
+
+
+            </li>
+
+            <li>
+                <b>User-Friendly Experience:</b> We understand the importance of a seamless ordering process. Our user-friendly website and mobile app are designed to make your food ordering journey hassle-free and enjoyable.
+
+
+            </li>
+
+            <li>
+                <b>Timely Deliveries:</b> Your time is valuable, and we respect that. Our efficient delivery network ensures that your order reaches your doorstep on time, piping hot and ready to be savored.
+            </li>
+        </ol>
+        </h4>
+    </h3>
+  </p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="Sumeet.jfif" alt="Sumeet" style="height:360px">
+      <div class="container">
+        <h2>Sumeet</h2>
+        <p class="title">Web designer</p>
+        <p>
+            Sumeet is a passionate web designer with a focus on user-centered design. His creative approach and attention to detail bring life to our website.
+        </p>
+        <p>suumeet2384.be21@chitkara.edu.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="Akarsh.jpeg" alt="Akarsh" style="height:360px">
+      <div class="container">
+        <h2>Akarsh Singh</h2>
+        <p class="title">Web designer</p>
+        <p>
+            Akarsh's expertise in UI/UX design ensures that our website is both visually appealing and easy to navigate, enhancing your online experience.
+        </p>
+        <p>akarsh2413.be21@chitkara.edu.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="Vivek.jpeg" alt="Vivek" style="height:360px">
+      <div class="container">
+        <h2>Vivek</h2>
+        <p class="title">Web designer</p>
+        <p>
+            Vivek's innovative design solutions and technical proficiency have played a crucial role in shaping the aesthetics and functionality of our website.
+        </p>
+        <p>vivek2397.be21@chitkara.edu.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOGIN</title>
+        <link rel="stylesheet" type="text/css" href="login.css">
+        <link rel="icon" type="image/x-icon" href="logo1.png">
+    </head>
+    <body>
+        <form method="post">
+            <div class="image">
+              <img src="login.png" alt="login image" class="login_image">
+            </div>
+          <fieldset>
+            <div class="container">
+              <label for="username"><b>Username</b></label> <br>
+              <input type="text" placeholder="Enter your name" name="name" required> <br>
+          
+              <label for="password"><b>Password</b></label> <br>
+              <input type="password" placeholder="Enter Password" name="password" required>
+            </fieldset>
+          
+              <button type="submit">Login</button> <br>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Keep Logged In
+              </label> <br>
+            </div>
+
+
+            <script>
+              let Button=document.querySelector('button');
+              Button.addEventListener('click',inputMsg);
+
+              function inputMsg()
+              {
+                alert("Welcome! You have logged in successfully");
+              }
+            </script>
+
+          
+            <div class="container" style="background-color:white" style="float: left;">
+              <button type="button" class="cancelbtn">Cancel</button>
+              <br>
+              <span class="password"> <a href="#">Forgot password?</a></span>
+            </div>
+          </form>
+
+          <script>
+            let Forgot=document.querySelector('span');
+            Forgot.addEventListener('click',showMsg);
+
+            function showMsg(){
+              alert("Try another password");
+            }
+
+          Forgot.addEventListener('click',inputMessage);
+
+            function inputMessage(){
+              let phoneNumber=prompt("Enter your phone number");
+              alert("An OTP will be sent to your Phone number shortly");
+            }
+
+            Forgot.addEventListener('click',inputMsg);
+
+            function inputMsg(){
+              prompt("Enter your new password")
+              var pswd=document.createElement("INPUT")
+              propmpt("Enter your password again")
+              var pswd1=document.createElement("INPUT")
+              alert("Your password has been reset successfully.")
+              pswd.setAttribute("type", "password")
+              pswd1.setAttribute("type", "password")
+            }
+          </script>
+
+          <a href="#" target="_blank" style="float: right;">New User? SIGN-UP</a> <br> <br> <br> <br>
+
+          <footer>
+            <a href="#">FAQ</a> &emsp; &emsp;
+            <a href="#">Contact Us</a> &emsp; &emsp;
+            <a href="#">Terms of Use</a> &emsp; &emsp;
+            <a href="#">Privacy Policy</a> &emsp; &emsp;
+            <a href="#">&copy; 2023 | GRUBHUB</a> &emsp; &emsp;
+        </footer>
+    </body>
+</html>

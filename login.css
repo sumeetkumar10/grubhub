@@ -1,0 +1,84 @@
+form {
+    border: 3px dotted white;
+  }
+  
+
+  input[type=text], input[type=password] {
+    
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid white;
+    box-sizing: border-box;
+  }
+  
+
+  button {
+    background-color:blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width:450px;
+  }
+  
+  button:hover {
+    color:brown;
+    opacity: 0.8;
+  }
+  
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color:red;
+  }
+  
+  .image {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  img.login_image {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    display: inline-block;
+    padding: 2px;
+  }
+  
+  span.password {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  @media screen and (max-width: 300px) {
+    span.password {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+  footer{ 
+    text-align:center;
+    background-color:darkslategray;
+}
+a:link{
+  color:aqua;
+}
+a:active{
+  color:green;
+}
+a:visited{
+  color:violet;
+}
+a:hover{
+  color:lightskyblue;
+}
+button:hover{
+  color:aqua;
+}
